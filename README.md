@@ -28,29 +28,32 @@
 ### 1. 安装
 
 ```bash
-git clone https://github.com/DayuanJiang/next-ai-draw-io
-cd next-ai-draw-io
+git clone https://github.com/chan-yuu/DiagramAI.git
+cd DiagramAI
 npm install
 ```
 
 ### 2. 配置
 
 创建 `.env.local` 文件：
+```bash
+cp env.example .env.local
+```
 
 ```bash
 # 必需配置
 AI_PROVIDER=deepseek
 AI_MODEL=deepseek-chat
-DEEPSEEK_API_KEY=your-api-key-here
+DEEPSEEK_API_KEY=your-api-key-here # cyun的：DEEPSEEK_API_KEY=sk-28d7d669e40b406a91f76cdba0e7c5c5
 ```
 
 **支持的 AI 提供商**：
-- DeepSeek（推荐，性价比高）
+- DeepSeek（推荐）
 - OpenAI (GPT-4)
 - Anthropic (Claude)
 - Google (Gemini)
 - AWS Bedrock
-- Ollama（本地部署）
+- Ollama
 
 ### 3. 运行
 
@@ -63,6 +66,8 @@ npm run dev
 ---
 
 ## 💡 使用示例
+你好，Give me a **animated connector** diagram of transformer's architecture.
+![alt text](test.png)
 
 ### 简单流程图
 ```
