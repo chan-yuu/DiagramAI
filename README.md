@@ -44,7 +44,7 @@ cp env.example .env.local
 # 必需配置
 AI_PROVIDER=deepseek
 AI_MODEL=deepseek-chat
-DEEPSEEK_API_KEY=your-api-key-here # cyun的：DEEPSEEK_API_KEY=sk-28d7d669e40b406a91f76cdba0e7c5c5
+DEEPSEEK_API_KEY=your-api-key-here
 ```
 
 **支持的 AI 提供商**：
